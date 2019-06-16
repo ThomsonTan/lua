@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.7 FATAL_ERROR)
+
+if(NOT DEFINED CMAKE_C_COMPILER)
 set (CMAKE_C_COMPILER cl.exe)
+endif()
 
 project(lua LANGUAGES C)
 
